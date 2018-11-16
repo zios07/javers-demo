@@ -1,0 +1,21 @@
+spring:
+  data:
+    mongodb:
+      host: localhost
+      database: test
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    password: root
+    url: jdbc:mysql://localhost:3306/demojavers?useSSL=false
+    username: root
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5Dialect
+
+
+server:
+  port: 9999
